@@ -1,6 +1,11 @@
 tasks:
-  - name: Initialization
-    init: echo init &>/dev/null
+  - name: prebuild
+    init: |
+      echo docker-build:
+      cat docker-build-date.txt
+      echo prebuild:
+      date >prebuid-date.txt
+      cat prebuid-date.txt
 
 image:
   file: gitpod.Dockerfile
