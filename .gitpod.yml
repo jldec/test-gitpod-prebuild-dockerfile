@@ -1,0 +1,6 @@
+tasks:
+  - name: Initialization
+    init: echo init &>/dev/null
+
+image:
+  file: gitpod.Dockerfile
