@@ -2,7 +2,7 @@ tasks:
   - name: prebuild
     init: |
       echo docker-build:
-      sudo cat ~/docker-build-date.txt
+      cat ~/docker-build-date.txt
       echo prebuild:
       date >prebuild-date.txt
       cat prebuild-date.txt
