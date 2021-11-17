@@ -1,4 +1,4 @@
 FROM gitpod/workspace-full
 
-# are we caching docker?
-RUN date >>docker-build-date.txt
+# use ADD instead of RUN to bust docker cache
+ADD https://time.jldec.workers.dev/ docker-build-date.txt
