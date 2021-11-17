@@ -2,10 +2,10 @@ tasks:
   - name: prebuild
     init: |
       echo docker-build:
-      cat docker-build-date.txt
+      cat ~/docker-build-date.txt
       echo prebuild:
-      date >prebuid-date.txt
-      cat prebuid-date.txt
+      date >prebuild-date.txt
+      cat prebuild-date.txt
 
 image:
   file: gitpod.Dockerfile
