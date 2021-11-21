@@ -4,7 +4,7 @@ tasks:
       echo docker-build:
       cat ~/docker-build-date.txt
       echo prebuild:
-      date >prebuild-date.txt
+      node -p 'Date()' >prebuild-date.txt
       cat prebuild-date.txt
 
 image:
