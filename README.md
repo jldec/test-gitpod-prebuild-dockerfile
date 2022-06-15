@@ -1,8 +1,11 @@
-Testing prebuild and docker build triggers
+#### branch 'env-var-test-only'
+Use this to test project level env vars for prebuilds.  
+The prebuild should list all env vars which contain `GRADLE`
 
-The prebuild log will show the date/time of the docker-build as well as the date/time of the prebuild.
-This can be used to verify that the docker build is only triggered by updates to the Dockerfile
+gitpod.yml  
 
-#### branch 'testenv'
-prebuild shows: `env | grep GRADLE`
-8
+```yaml
+tasks:
+  - init: |
+      env | grep GRADLE
+```
