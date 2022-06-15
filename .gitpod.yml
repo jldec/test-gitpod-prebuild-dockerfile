@@ -1,11 +1,3 @@
 tasks:
-  - name: prebuild
-    init: |
-      echo docker-build:
-      cat ~/docker-build-date.txt
-      echo prebuild:
-      node -p 'Date()' >prebuild-date.txt
-      cat prebuild-date.txt
-
-image:
-  file: gitpod.Dockerfile
+  - init: |
+      env | grep GRADLE
