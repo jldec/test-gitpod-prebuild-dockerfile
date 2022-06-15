@@ -5,3 +5,4 @@ This can be used to verify that the docker build is only triggered by updates to
 
 #### branch 'testenv'
 prebuild shows: `env | grep GRADLE`
+8
