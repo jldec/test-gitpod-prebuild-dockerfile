@@ -6,6 +6,8 @@ tasks:
       echo prebuild:
       node -p 'Date()' >prebuild-date.txt
       cat prebuild-date.txt
+      echo 'env | grep GRADLE'
+      env | grep GRADLE
 
 image:
   file: gitpod.Dockerfile
