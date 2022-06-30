@@ -6,7 +6,5 @@ This can be used to verify that the docker build is only triggered by updates to
 #### bad-dockerfile branch
 ```
 # this should fail
-RUN exit 1
+RUN exit 0
 ```
-
-heelo 12
