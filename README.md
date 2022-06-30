@@ -8,3 +8,5 @@ This can be used to verify that the docker build is only triggered by updates to
 # this should fail
 RUN exit 1
 ```
+
+heelo 12
